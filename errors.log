@@ -1,0 +1,370 @@
+WARNING:fake_useragent:Error occurred during loading data. Trying to use cache server http://d2g6u4gh6d9rq0.cloudfront.net/browsers/fake_useragent_0.1.10.json
+Traceback (most recent call last):
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\fake_useragent\utils.py", line 67, in get
+    context=context,
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\urllib\request.py", line 526, in open
+    response = self._open(req, data)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\urllib\request.py", line 544, in _open
+    '_open', req)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\urllib\request.py", line 1346, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\urllib\request.py", line 1321, in do_open
+    r = h.getresponse()
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\fake_useragent\utils.py", line 166, in load
+    verify_ssl=verify_ssl,
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\fake_useragent\utils.py", line 122, in get_browser_versions
+    verify_ssl=verify_ssl,
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\fake_useragent\utils.py", line 84, in get
+    raise FakeUserAgentError('Maximum amount of retries reached')
+fake_useragent.errors.FakeUserAgentError: Maximum amount of retries reached
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "C:\Users\aimar\Downloads\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:get_media_id_by_tag
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 380, in get_media_id_by_tag
+    all_data = json.loads(r.text)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on like!
+Traceback (most recent call last):
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\ssl.py", line 1009, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\ssl.py", line 871, in read
+    return self._sslobj.read(len, buffer)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\ssl.py", line 631, in read
+    v = self._sslobj.read(len, buffer)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\requests\adapters.py", line 445, in send
+    timeout=timeout
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\util\retry.py", line 367, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\packages\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\ssl.py", line 1009, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\ssl.py", line 871, in read
+    return self._sslobj.read(len, buffer)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\ssl.py", line 631, in read
+    v = self._sslobj.read(len, buffer)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', TimeoutError(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond', None, 10060, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 592, in like
+    like = self.s.post(url_likes)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\requests\sessions.py", line 559, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\requests\sessions.py", line 512, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\requests\sessions.py", line 622, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\requests\adapters.py", line 495, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', TimeoutError(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond', None, 10060, None))
+ERROR:urllib3.connection:Certificate did not match expected hostname: www.instagram.com. Certificate: {'subject': ((('organizationalUnitName', 'Domain Control Validated'),), (('organizationalUnitName', 'PositiveSSL'),), (('commonName', 'net.sharif.edu'),)), 'issuer': ((('countryName', 'GB'),), (('stateOrProvinceName', 'Greater Manchester'),), (('localityName', 'Salford'),), (('organizationName', 'COMODO CA Limited'),), (('commonName', 'COMODO RSA Domain Validation Secure Server CA'),)), 'version': 3, 'serialNumber': '985DEC9B702621088DCD422B8588DA8E', 'notBefore': 'Apr 25 00:00:00 2018 GMT', 'notAfter': 'Apr 24 23:59:59 2020 GMT', 'subjectAltName': (('DNS', 'net.sharif.edu'), ('DNS', 'www.net.sharif.edu')), 'OCSP': ('http://ocsp.comodoca.com',), 'caIssuers': ('http://crt.comodoca.com/COMODORSADomainValidationSecureServerCA.crt',), 'crlDistributionPoints': ('http://crl.comodoca.com/COMODORSADomainValidationSecureServerCA.crl',)}
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connectionpool.py", line 849, in _validate_conn
+    conn.connect()
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connection.py", line 376, in connect
+    _match_hostname(cert, self.assert_hostname or hostname)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connection.py", line 386, in _match_hostname
+    match_hostname(cert, asserted_hostname)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\ssl.py", line 327, in match_hostname
+    % (hostname, ', '.join(map(repr, dnsnames))))
+ssl.CertificateError: hostname 'www.instagram.com' doesn't match either of 'net.sharif.edu', 'www.net.sharif.edu'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\requests\adapters.py", line 445, in send
+    timeout=timeout
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.instagram.com', port=443): Max retries exceeded with url: /ferbunii_zmanii_turkii/ (Caused by SSLError(CertificateError("hostname 'www.instagram.com' doesn't match either of 'net.sharif.edu', 'www.net.sharif.edu'",),))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 868, in auto_unfollow
+    r = self.s.get(url_tag)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\requests\sessions.py", line 525, in get
+    return self.request('GET', url, **kwargs)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\requests\sessions.py", line 512, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\requests\sessions.py", line 622, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\requests\adapters.py", line 511, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='www.instagram.com', port=443): Max retries exceeded with url: /ferbunii_zmanii_turkii/ (Caused by SSLError(CertificateError("hostname 'www.instagram.com' doesn't match either of 'net.sharif.edu', 'www.net.sharif.edu'",),))
+ERROR:root:Except on follow!
+Traceback (most recent call last):
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\requests\adapters.py", line 445, in send
+    timeout=timeout
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\util\retry.py", line 367, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\packages\six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\urllib3\connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 1331, in getresponse
+    response.begin()
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 632, in follow
+    follow = self.s.post(url_follow)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\requests\sessions.py", line 559, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\requests\sessions.py", line 512, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\requests\sessions.py", line 622, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\site-packages\requests\adapters.py", line 495, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:get_media_id_by_tag
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 380, in get_media_id_by_tag
+    all_data = json.loads(r.text)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Users\aimar\AppData\Local\Programs\Python\Python36-32\lib\json\decoder.py", line 355, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Unterminated string starting at: line 1 column 217691 (char 217690)
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
+ERROR:root:Except on auto_unfollow!
+Traceback (most recent call last):
+  File "D:\#projects\instabot.py-master\src\instabot.py", line 869, in auto_unfollow
+    all_data = json.loads(re.search('{"activity.+show_app', r.text, re.DOTALL).group(0)+'":""}')['entry_data']['ProfilePage'][0]
+AttributeError: 'NoneType' object has no attribute 'group'
